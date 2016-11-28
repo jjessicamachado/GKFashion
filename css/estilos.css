@@ -40,7 +40,12 @@
 .icon-shopping-cart:before {
   content: "\e903";
 }
-
+.menu-pop-up{
+  z-index: 5
+}
+.accordion label {
+    z-index: 1
+}
 html {
     color: #222;
     font-size: 1em;
