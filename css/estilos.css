@@ -717,6 +717,16 @@ li>a:only-child:after {
 
 }
 
+.img-top-bar{
+	width: 5%;
+	height: auto;
+}
+
+.nav-bar-img{
+	width: 5%;
+	height: auto;
+}
+
 /*--PRODUTOS--*/
 
 div.img {
