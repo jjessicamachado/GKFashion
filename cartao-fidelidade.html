@@ -2,7 +2,7 @@
 <html class="no-js" lang="pt-br">
    <head>
       <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="description" content="Site de moda GK Fashion.">
       <meta name="keywords" content="moda, roupa, compra, e-commerce">
       <meta name="robots" content="index, follow">
@@ -12,23 +12,26 @@
       <link rel="stylesheet" href="css/estilos.css">
 			<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Istok+Web|Noticia+Text|Ubuntu" rel="stylesheet">
 
-      <title>GK Fashion: Cartão Fidelidade</title>
+			<title>GK Fashion: Cartão Fidelidade</title>
    </head>
-   <body>
-      <header class="header-container">
+
+	 <body>
+
+			<header class="header-container">
          <div id="top-bar">
             <div class="clearfix">
-               <span class="search">
-                  <form action="" method="get" id="search_box"><input type="search" id="search_text" class="search_text">
-                     <input type="submit" name="search_btn" id="search_btn" value=" ">
+               <div class="search">
+                  <form method="get" id="search_box"><input type="search" id="search_text" class="search_text">
+                    <input type="image" id="searchbtn" name="searchbtn" value="submit" src="img/search.svg">
                   </form>
-               </span>
+               </div>
                <span class="menu2"><a href="#">Registre-se</a></span>
                <span class="menu2"><a href="#">Login</a></span>
-               <span class="carrinho"><a href="#">Sem itens</a></span>
+               <span class="carrinho"><img src="img/carrinho.svg"><a href="#">Sem itens</a></span>
             </div>
          </div>
-         <nav>
+
+				 <nav>
             <div id="logo">
                <a href="index.html">
                   <h1 class="replace">GK Fashion</h1>
@@ -39,13 +42,13 @@
             <ul class="menu">
                <li><a href="index.html">Início</a></li>
                <li>
-                  <label for="drop-1" class="toggle">Produtos +</label>
-                  <a href="#">Produtos</a>
+                  <label for="drop-1" class="toggle">Produtos <img src="img/arrow-down.svg"></label>
+                  <a href="#">Produtos <img src="img/arrow-down.svg"></a>
                   <input type="checkbox" id="drop-1"/>
-                  <ul class="border menu-pop-up">
+                  <ul class="border">
                      <li>
-                        <label for="drop-3" class="toggle">Blusas e Camisas +</label>
-                        <a href="#">Blusas e Camisas</a>
+                        <label for="drop-3" class="toggle">Blusas e Camisas <img src="img/arrow-down.svg"></label>
+                        <a href="#">Blusas e Camisas <img src="img/arrow-right.svg"></a>
                         <input type="checkbox" id="drop-3"/>
                         <ul>
                            <li><a href="#">Manga curta</a></li>
@@ -68,6 +71,7 @@
             </ul>
          </nav>
       </header>
+
       <main>
          <div class="main wrapper clearfix">
 
