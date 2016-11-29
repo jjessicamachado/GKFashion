@@ -12,6 +12,10 @@
       <link rel="stylesheet" href="css/estilos.css">
 			<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Istok+Web|Noticia+Text|Ubuntu" rel="stylesheet">
 
+      <!‐‐[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]‐‐>
+
 			<title>GK Fashion: Sobre</title>
    </head>
 
@@ -27,7 +31,7 @@
                </div>
                <span class="menu2"><a href="#">Registre-se</a></span>
                <span class="menu2"><a href="#">Login</a></span>
-               <span class="carrinho"><img src="img/carrinho.svg"><a href="#">Sem itens</a></span>
+               <span class="carrinho"><img src="img/carrinho.svg"><a href="#">Carrinho vazio</a></span>
             </div>
          </div>
 
@@ -39,7 +43,7 @@
             </div>
             <label for="drop" class="toggle">Menu</label>
             <input type="checkbox" id="drop" />
-            <ul class="menu">
+            <ul class="menu-pop-up">
                <li><a href="index.html">Início</a></li>
                <li>
                   <label for="drop-1" class="toggle">Produtos <img src="img/arrow-down.svg"></label>
@@ -75,12 +79,12 @@
       <main>
          <div class="main wrapper clearfix">
             <article>
-               <h1 class="title_2">A GK Fashion</h1>
+               <h2 class="title_2">A GK Fashion</h2>
                <p>A Mirror Fashion é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de participação em 118 deles.</p>
-               <p>Nosso centro de distribuição fica em <a href="http://maps.google.com.br/?q=Cachoeirinha">Cachoeirinha, na grande Porto Alegre</a>, no RS - Rio Grande do Sul. De lá, saem 48 aviões que distribuem nossos produtos às casas do mundo todo. Nosso centro de distribuição:</p>
-               <br><figure>
-                  <img src="img/centro-distribuicao.png" alt="">
-                  <figcaption>Centro de Distribuição</figcaption>
+               <p>Nosso centro de distribuição fica em <a href="http://maps.google.com.br/?q=Cachoeirinha" target="_new">Cachoeirinha, na grande Porto Alegre</a>, no RS - Rio Grande do Sul. De lá, saem 48 aviões que distribuem nossos produtos às casas do mundo todo. Nosso centro de distribuição:</p>
+               <br><figure id="centro-distribuicao">
+                  <img src="img/centro-distribuicao.png" alt="centro de distribuição" title="centro de distribuição da GK Fashion">
+                  <figcaption>Centro de Distribuição da GK Fashion</figcaption>
                </figure>
                <br>
                <p>Compre suas roupas e acessórios na Mirror Fashion. Acesse <a href="index.html">nossa loja</a> ou <a href="contato.html">entre em contato</a> se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.</p>
@@ -88,18 +92,16 @@
 
             <article>
                <h2 class="title_2" id="historia">História</h2>
-               <p>A fundação em 1932 ocorreu no momento do crescimento econônico da região sul do país, como pólo de moda no Brasil. A família Teles de Bissón, tradicional da cidade, investiu todas as suas economias nessa nova iniciativa, revolucionária para a época. O fundador Carlos Augusto Teles de Bissón, dotado de particular visão administrativa, guiou os negócios da empresa durante mais de 50 anos, muitos deles ao lado de seu filho Antonio Augusto Teles de Bissón, atual CEO. O nome da empresa é inspirado no nome da matriarca da família, Grace Kelly Teles de Bissón.</p>
-               <br>
-               <figure>
-                  <img src="img/familia-teles.jpg" alt="">
-                  <figcaption>Família Teles</figcaption>
+               <figure id="familia-teles">
+                  <img src="img/familia-teles.jpg" alt="família Teles de Bressón" title="família Teles de Bressón">
+                  <figcaption>Família Teles de Bressón</figcaption>
                </figure>
-               <br>
+               <p>A fundação em 1932 ocorreu no momento do crescimento econônico da região sul do país, como pólo de moda no Brasil. A família Teles de Bissón, tradicional da cidade, investiu todas as suas economias nessa nova iniciativa, revolucionária para a época. O fundador Carlos Augusto Teles de Bissón, dotado de particular visão administrativa, guiou os negócios da empresa durante mais de 50 anos, muitos deles ao lado de seu filho Antonio Augusto Teles de Bissón, atual CEO. O nome da empresa é inspirado no nome da matriarca da família, Grace Kelly Teles de Bissón.</p>
                <p>O crescimento da empresa foi praticamente instantâneo. Nos primeiros 5 anos, já atendia 18 países. Bateu a marca de 100 países em apenas 15 anos de existência. Até hoje, já atendeu 740 milhões de usuários diferentes, em bilhões de diferentes pedidos.</p>
                <p>O crescimento em número de funcionários é também assombroso. Hoje, é a maior empregadora do Brasil, mas mesmo após apenas 5 anos de sua existência, já possuía 30 mil funcionários. Fora do Brasil, há 240 mil funcionários, além dos 890 mil brasileiros nas instalações de Cachoeirinha, situada na grande Porto Alegre e nos escritórios em todo país.</p>
                <p>Dada a importância econômica da empresa para o Brasil, a família Teles de Bissón já recebeu diversos prêmios, homenagens e condecorações. Todos os presidentes do Brasil já visitaram as instalações da GK Fashion, além de presidentes da União Européia, Ásia e o secretário-geral da ONU.</p></article>
 
-						<aside>
+						<aside class="diferenciais">
                <h2 class="title_1">Diferenciais</h2>
                <br>
                <ul>
@@ -119,15 +121,18 @@
       <footer>
          <img src="img/logo_rodape.png" alt="" title=""><span class="copyright">Copyright 2016 © GK Fashion | Desenvolvido por: Jéssica Machado</span>
          <div id="sociais">
-            <a href="#">
+            <a href="http://www.facebook.com/gkfashion">
                <div class="spritefb"></div>
             </a>
-            <a href="#">
+
+            <a href="http://www.twitter.com/gkfashion">
                <div class="spritegoogle"></div>
             </a>
-            <a href="#">
+
+            <a href="http://www.google.plus.com/gkfashion">
                <div class="spritetwitter"></div>
             </a>
+          
          </div>
       </footer>
    </body>
