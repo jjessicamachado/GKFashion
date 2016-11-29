@@ -93,6 +93,8 @@ a:visited {
 p {
 	font-size: 1em;
 	text-align: justify;
+	padding: 0 10px 0 10px;
+	line-height: 1.5em;
 }
 
 /*--RODAPE--*/
@@ -982,11 +984,37 @@ textarea {
 		margin: 0 auto;
 	}
 
-	figcaption {
+	.centro-distribuicao {
+		background: #f2eded;
+		border: 1px solid #adadaf;
 		text-align: center;
-		padding-top: 1%;
-		font-size: .8em;
+		padding: 15px;
+		margin: 30px;
+		width: 550px;
+		text-align: center;
 	}
+
+.familia-teles {
+	background: #f2eded;
+	border: 1px solid #adadaf;
+	text-align: center;
+	padding: 15px;
+	margin: 30px;
+	max-width: 100%;
+	float: right;
+	margin: 0 0 0 3%;
+}
+
+figcaption {
+	font-size: .9em;
+	text-align: center;
+}
+
+.familia-teles figcaption {
+	margin-top: 10px;
+	font-size: .9em;
+	text-align: center;
+}
 
 	aside {
 		float: right;
