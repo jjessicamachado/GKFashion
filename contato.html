@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="css/estilos.css">
 			<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Istok+Web|Noticia+Text|Ubuntu" rel="stylesheet">
 
-			<title>GK Fashion: Contato</title>
+			<title>GK Fashion</title>
    </head>
 
 	 <body>
@@ -22,33 +22,33 @@
             <div class="clearfix">
                <div class="search">
                   <form method="get" id="search_box"><input type="search" id="search_text" class="search_text">
-                    <input type="image" id="searchbtn" name="searchbtn" value="submit" src="img/search.svg">
+                    <input type="image" id="searchbtn" name="searchbtn" src="img/search.svg" alt="buscar">
                   </form>
                </div>
                <span class="menu2"><a href="#">Registre-se</a></span>
                <span class="menu2"><a href="#">Login</a></span>
-               <span class="carrinho"><img src="img/carrinho.svg"><a href="#">Carrinho vazio</a></span>
+               <span class="carrinho"><img src="img/carrinho.svg" alt="carrinho"><a href="#">Carrinho vazio</a></span>
             </div>
          </div>
 
 				 <nav>
             <div id="logo">
                <a href="index.html">
-                  <h1 class="replace">GK Fashion</h1>
+                  <h1 class="replace">GK Fashion: Contato</h1>
                </a>
             </div>
             <label for="drop" class="toggle">Menu</label>
             <input type="checkbox" id="drop" />
-              <ul class="menu-pop-up">
+            <ul class="menu-pop-up">
                <li><a href="index.html">Início</a></li>
                <li>
-                  <label for="drop-1" class="toggle">Produtos <img src="img/arrow-down.svg"></label>
-                  <a href="#">Produtos <img src="img/arrow-down.svg"></a>
+                  <label for="drop-1" class="toggle">Produtos <img src="img/arrow-down.svg" alt="seta baixo"></label>
+                  <a href="#">Produtos <img src="img/arrow-down.svg" alt="seta baixo"></a>
                   <input type="checkbox" id="drop-1"/>
                   <ul class="border">
                      <li>
-                        <label for="drop-3" class="toggle">Blusas e Camisas <img src="img/arrow-down.svg"></label>
-                        <a href="#">Blusas e Camisas <img src="img/arrow-right.svg"></a>
+                        <label for="drop-3" class="toggle">Blusas e Camisas <img src="img/arrow-down.svg" alt="seta baixo"></label>
+                        <a href="#">Blusas e Camisas <img src="img/arrow-right.svg" alt="seta lado"></a>
                         <input type="checkbox" id="drop-3"/>
                         <ul>
                            <li><a href="#">Manga curta</a></li>
@@ -79,12 +79,11 @@
                <h2 class="title_1">
                Entre em contato</h2>
                <div class="contact">
-                  <form method="post" action="mailto:jessicasmachado@live.com" class="contact-box">
+                  <form method="post" class="contact-box">
                      <fieldset>
-                        <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="50" maxlength="40" placeholder="Insira seu nome" required="required"/></p>
+                        <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="50" maxlength="40" placeholder="Insira seu nome" pattern="\D*" required="required"/></p>
                         <p><label for="cEmail">E-mail:</label> <input type="email" id="cEmail" size="50" maxlength="40" placeholder="Insira seu e-mail" required="required"/></p>
-                        <p>
-                           <label for="cMotivo">Motivo:</label>
+                        <p><label for="cMotivo">Motivo:</label>
                            <select id="cMotivo" required="required">
                               <optgroup label="Assunto">
                                  <option>Sugestão</option>
@@ -95,7 +94,7 @@
                            </select>
                         </p>
                         <p><label for="cComentario">Comentários:</label> <textarea id="cComentario" placeholder="Insira sua mensagem" required=required></textarea></p>
-                        <p><button type="submit">Enviar</button></p>
+                        <p><button type="submit" class="formbtn">Enviar</button></p>
                      </fieldset>
                   </form>
                </div>
@@ -104,16 +103,16 @@
 				 </div>
       </main>
 
-		  <footer>
-         <img src="img/logo_rodape.png" alt="" title=""><span class="copyright">Copyright 2016 © GK Fashion | Desenvolvido por: Jéssica Machado</span>
+      <footer>
+         <img src="img/logo_rodape.png" alt="GK Fashion" title="logotipo GK Fashion"><span class="copyright">Copyright 2016 © GK Fashion | Desenvolvido por: Jéssica Machado</span>
          <div id="sociais">
-            <a href="#">
+            <a href="http://www.facebook.com/gkfashion">
                <div class="spritefb"></div>
             </a>
-            <a href="#">
+            <a href="http://www.google.plus.com/gkfashion">
                <div class="spritegoogle"></div>
             </a>
-            <a href="#">
+            <a href="http://www.twitter.com/gkfashion">
                <div class="spritetwitter"></div>
             </a>
          </div>
